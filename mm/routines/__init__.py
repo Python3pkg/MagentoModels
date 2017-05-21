@@ -150,7 +150,7 @@ class RoutinesBase(object):
                     if row_raw is None:
                         break
 
-                    row = dict(zip(names, row_raw))
+                    row = dict(list(zip(names, row_raw)))
                     set_.append(row)
 
                 sets.append(list(set_))
